@@ -1,0 +1,18 @@
+<h2>Product Details</h2>
+<div *ngFor="let p of product; let i = index">
+    <!-- for displaying index -->
+     <p>{{i}}</p>
+    <div class="product-container">
+        <div>
+            <div class="name-container"><b>{{p.name}}</b></div>
+            <div class="detail-container">
+                <div class="details"><b>Price</b>${{p.price}}</div>
+            </div>
+        </div>
+        <div class="options">
+            <button class="btn btn-success" (click)="addToCart(p)">Add</button>
+        </div>
+    </div>
+</div>
+
+<app-order-placement [cart]="cart"></app-order-placement>

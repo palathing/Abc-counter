@@ -1,0 +1,27 @@
+<!-- Review Stats
+<div class="review-stats">
+    <p>{{ getReviewStats() }}</p>
+  </div> -->
+  
+  <!-- Performance Message -->
+  <!-- <div class="performance-message">
+    <p>{{ getPerformanceMessage() }}</p>
+  </div> -->
+
+
+
+  <div *ngIf="goodCount !== undefined">
+    <h2>Review Stats:</h2>
+    <p><strong>Good Reviews:</strong> {{ goodCount }}</p>
+    <p><strong>Average Reviews:</strong> {{ averageCount }}</p>
+    <p><strong>Poor Reviews:</strong> {{ poorCount }}</p>
+  
+    <h3>Performance:</h3>
+    <p>{{ performanceMessage }}</p>
+  </div>
+  
+  <!-- Button to show the review stats -->
+  <div>
+    <button (click)="showReviewStats()">Show Review Stats</button>
+  </div>
+  

@@ -1,0 +1,73 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header section */
+  div h1 {
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  /* Display today's date */
+  div h1:last-child {
+    font-size: 18px;
+    color: #555;
+    font-weight: normal;
+  }
+  
+  /* Search container styles */
+  .search-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Label and input */
+  .search-div span {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .search-div input {
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button styles */
+  .search-div .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-div .btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Hidden component handling */
+  [hidden] {
+    display: none !important;
+  }
+  

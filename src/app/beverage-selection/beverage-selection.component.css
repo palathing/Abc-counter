@@ -1,0 +1,68 @@
+/* General container for the product details */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the product index */
+  p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Name container for the product */
+  .name-container {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Detail container styling */
+  .detail-container {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Styling for the "Add" button */
+  .options .btn {
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .options .btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .product-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .options {
+      margin-top: 10px;
+    }
+  }
+  

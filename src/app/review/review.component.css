@@ -1,0 +1,58 @@
+/* Basic styling for the container */
+div {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the review buttons */
+  button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on buttons */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling for the message section */
+  .review-message p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Hide elements when needed */
+  [hidden] {
+    display: none;
+  }
+  
+  /* Style for the 'View Performance' button */
+  button:last-child {
+    background-color: #008CBA; /* Blue background */
+    margin-top: 20px;
+  }
+  
+  button:last-child:hover {
+    background-color: #007B9A;
+  }
+  
+  /* Optional: Style for the Performance component when visible */
+  app-performance {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  

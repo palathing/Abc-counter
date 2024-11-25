@@ -1,0 +1,14 @@
+<div>
+    <h1><b>ABC Cafe</b></h1>
+    <h1>{{today|date}}</h1>
+</div>
+
+<div class="search-div">
+    <span><b>User:</b></span>
+    <input type="text" (input)="changesearchvalue($event)"> <br>
+    <button class="btn btn-success" *ngIf="searchvalue" (click)="getOrder()">Ask Order</button>
+    <div><br>
+    </div>
+</div>
+
+<app-order-inquiry [hidden]="askOrder" [customer]="customer" ></app-order-inquiry>

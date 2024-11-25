@@ -1,0 +1,15 @@
+<h2>Your orders</h2>
+<div class="cart">
+    <h3>Cart</h3>
+    <ul>
+        <li *ngFor="let item of cart">{{ item.name | uppercase }} - ${{ item.price }}</li>
+    </ul>
+
+    <div class="total-amount">
+        <b>Total Amount: </b> ${{ calculateTotal() }}
+    </div>
+    <button (click)="getReview()">Consumed</button>
+</div>
+
+
+<app-review [hidden]="review"></app-review>

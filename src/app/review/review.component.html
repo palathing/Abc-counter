@@ -1,0 +1,15 @@
+<div>
+    <button (click)="getReview('poor')" *ngIf="isSubmitted">Poor</button>
+    <button (click)="getReview('Average')" *ngIf="isSubmitted">Average</button>
+    <button (click)="getReview('Good')" *ngIf="isSubmitted">Good</button>
+</div>
+
+<div class="review-message" *ngIf="!isSubmitted">
+    <p>{{ message }}</p>
+</div>
+
+<div>
+    <button (click)="performance()">View Performance</button>
+</div>
+
+<app-performance [hidden]="perf" [message]="message"></app-performance>

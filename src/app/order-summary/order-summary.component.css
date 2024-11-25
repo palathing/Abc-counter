@@ -1,0 +1,73 @@
+/* Styling for the main heading */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Cart container styling */
+  .cart {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Subheading for the cart section */
+  .cart h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #444;
+    text-align: center;
+  }
+  
+  /* Styling for the cart items list */
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart ul li {
+    font-size: 16px;
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Last item without border */
+  .cart ul li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Total amount styling */
+  .total-amount {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: right;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .cart {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .cart ul li {
+      font-size: 14px;
+    }
+  
+    .total-amount {
+      font-size: 16px;
+    }
+  }
+  
